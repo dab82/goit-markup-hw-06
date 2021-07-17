@@ -408,14 +408,12 @@
 				<div class="mailing">
 					<p class="mailing-titel">Подпишитесь на рассылку</p>
 					<form action="#" class="mailing-form">
-						<label for="" class="mailing-form-field">
-							<input type="email" name="mail" class="mailing-input" placeholder="E-mail"
-								title="example@mail.com">
-						</label>
+						<input type="email" name="mail" class="mailing-input" placeholder="E-mail"
+							title="example@mail.com" required>
 						<button type="submit" class="mailing-btn">
 							Подписаться
-							<svg width="30" height="30">
-								<use href="./images/sprite.svg#form-icon-icon-send"></use>
+							<svg class="mailing-icon" width="24" height="24">
+								<use href="./images/sprite.svg#form-icon-send"></use>
 							</svg>
 						</button>
 					</form>
@@ -467,9 +465,11 @@
 						Комментарий
 						<textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
 					</label>
-					<input type="checkbox" class="modal-form-checkbox visually-hidden" id="accept-policy" required>
-					<label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и
-						принимаю&nbsp;<a href="#" class="modal-form-label-link">Условия договора</a></label>
+					<span class="modal-custom-checkbox">
+						<input type="checkbox" class="modal-form-checkbox visually-hidden" id="accept-policy" required>
+						<label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и
+							принимаю&nbsp;<a href="#" class="modal-form-label-link">Условия договора</a></label>
+					</span>
 					<button type="submit" class="modal-form-btn">Отправить</button>
 				</form>
 			</div>
