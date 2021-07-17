@@ -330,6 +330,10 @@ ul {
 	cursor: pointer;
 	margin-right: 12px;
 }
+.mailing-input:focus,
+.mailing-input:checked {
+	border: var(--primary-white-color);
+}
 .mailing-input::placeholder {
 	font-size: 16px;
 	line-height: 1.25;
